@@ -30,22 +30,40 @@
             </div>
         </div>
 
-        <!-- header -->
+        <!-- home screen -->
         <div id="home-screen" class="container-fluid mt-3">
-            <div class="row">
-                <div class="col-5 mx-3 float-left">
-                    <img src="../imgs/img.jpg" alt="ProfilePicture" class="img-fluid img-thumbnail">
+            <div class="row row-cols-auto">
+                <div class="col">
+                    <img src="../imgs/img.jpg" alt="ProfilePicture" class="img-thumbnail">
                 </div>
-                <div class="col float-left">
+                <div class="col position-absolute top-0 start-50 translate-middle mt-5">
                     <p class="display-3">Bailey Maynard</p>
                 </div>
             </div>
             <div class="row">
-                <nav class="nav col-lg-1 flex-column mx-3 nav-pills">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                </nav>
+                <ul class="list-group-flush col-lg-2">
+                    <li onclick="transitionCard('#bio-card', this)" class="list-group-item-dark" aria-current="true">Bio</li>
+                    <li onclick="transitionCard('#experience-card', this)" class="list-group-item">Experience</li>
+                    <li onclick="transitionCard('#projects-card', this)" class="list-group-item">Projects</li>
+                </ul>
+                <div id="bio-card" class="col card active-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Biography</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam culpa deleniti non corporis iure minus excepturi aliquid illum. Soluta earum nemo quod tempora omnis nam ex, nesciunt magni ea.</p>
+                    </div>
+                </div>
+                <div id="experience-card" class="col card">
+                    <div class="card-body">
+                        <h3 class="card-title">Experience</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam culpa deleniti non corporis iure minus excepturi aliquid illum. Soluta earum nemo quod tempora omnis nam ex, nesciunt magni ea.</p>
+                    </div>
+                </div>
+                <div id="projects-card" class="col card">
+                    <div class="card-body">
+                        <h3 class="card-title">Projects</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam culpa deleniti non corporis iure minus excepturi aliquid illum. Soluta earum nemo quod tempora omnis nam ex, nesciunt magni ea.</p>
+                    </div>
+                </div>
             </div>
         </div>
 

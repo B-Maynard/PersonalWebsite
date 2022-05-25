@@ -6,7 +6,7 @@ body {
 
 #splash-screen {
     display: block;
-    margin-top: 23%;
+    margin-top: 20%;
 }
 
 #home-screen {
@@ -15,4 +15,37 @@ body {
 
 .button:hover {
     cursor: pointer;
+}
+
+.card {
+    margin-right: 1em;
+}
+
+.card-body {
+    font-size: 1em;
+}
+
+#experience-card, #projects-card {
+    display: none;
+}
+
+.img-thumbnail {
+    margin-left: 3.5vw;
+}
+
+.list-group-flush {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.list-group-item {
+    padding: 2em;
+}
+
+.list-group-item-dark {
+    padding: 2em;
+}
+
+.active {
+    font-weight: bold;
 }
