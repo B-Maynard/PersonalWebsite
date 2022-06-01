@@ -18,56 +18,87 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
-    <body>
+    <body class="mb-5">
 
         <!-- splash screen -->
         <div id="splash-screen" class="container align-items-center">
             <div class="row">
-                <p class="display-1 text-center fw-bold anim-typewriter splash-text">Welcome to my website!</p>
+                <p class="display-1 text-center fw-bold">Welcome to my website!</p>
             </div>
-            <div class="row">
-                <i onclick="fadeOutSplashScreen()" class="display-3 text-center bi bi-arrow-right-circle splash-text button"></i>
-            </div>
+            <button class="btn btn-lg btn-floating position-absolute top-50 start-50 translate-middle mt-2">
+                <i onclick="fadeOutSplashScreen()" class="display-3 bi bi-arrow-right-circle"></i>
+            </button>
         </div>
 
         <!-- home screen -->
         <div id="home-screen" class="container-fluid mt-3">
-            <div class="row row-cols-auto">
-                <div class="col">
-                    <img src="../imgs/img.jpg" alt="ProfilePicture" class="img-thumbnail">
+            <div class="container header-text border border-5 rounded mb-5">
+                <div class="row row-cols-auto mx-auto d-block">
+                    <p class="display-3 text-center">Bailey Maynard</p>
                 </div>
-                <div class="col position-absolute top-0 start-50 translate-middle mt-5">
-                    <p class="display-3">Bailey Maynard</p>
+                <div class="row row-cols-auto mx-auto d-block">
+                    <p class="display-6 text-center">Software Developer</p>
                 </div>
             </div>
             <div class="row">
                 <ul class="list-group-flush col-lg-2">
-                    <li onclick="transitionCard('#bio-card', this)" class="list-group-item-dark" aria-current="true">Bio</li>
+                    <img src="../imgs/img.jpg" alt="ProfilePicture" class="img-thumbnail mx-auto d-block mb-5">
+                    <li onclick="transitionCard('#bio-card', this)" class="list-group-item active-link">Bio</li>
                     <li onclick="transitionCard('#experience-card', this)" class="list-group-item">Experience</li>
                     <li onclick="transitionCard('#projects-card', this)" class="list-group-item">Projects</li>
                 </ul>
                 <div id="bio-card" class="col card active-card">
                     <div class="card-body">
-                        <h3 class="card-title">Biography</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam culpa deleniti non corporis iure minus excepturi aliquid illum. Soluta earum nemo quod tempora omnis nam ex, nesciunt magni ea.</p>
+                        <h3 class="card-title">Biography</h3>
+                        <p>Hello! My name is Bailey Maynard, and I currently work as a Software Developer out of upstate NY. <br><br>As a kid, I was always fascinated with technology - from my very first cell phone, to my first full-sized computer. I fell in love with the concept of being able to tinker and play around with tech, both inside on the software, as well as outside on the hardware. The spirit of discovery is what drove my fascination the most, and seeing my changes or tweaks update with instant results was the ultimate gratification. I believe this is why I ultimately chose software development as my career path, because software development encompasses all those aspects into one. One is able to tinker and play around with new facets of technology, as well as expand upon their current knowledge with tools they know and love. They can decide to tackle a lengthy, challenging project, or crank out something simple for that instant gratification. <br><br>This website is my current passion project, allowing me to expand my horizons into web development technologies that I haven't previously been able to play around with in my career. Expect continuous updates! </p>
                     </div>
                 </div>
                 <div id="experience-card" class="col card">
                     <div class="card-body">
-                        <h3 class="card-title">Experience</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam culpa deleniti non corporis iure minus excepturi aliquid illum. Soluta earum nemo quod tempora omnis nam ex, nesciunt magni ea.</p>
+                        <h3 class="card-title">Experience</h3>
+                        <div class="row">
+                            <h6 class="mt-3">Related:</h6>
+                            <h5 class="card-header">Buffalo Intelligent Technology Systems</h5>
+                            <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus distinctio harum nisi iusto magni quidem quasi expedita, enim quos vero. Vero excepturi magni fugiat saepe neque harum, nemo explicabo animi?</div>
+                            <h5 class="card-header">Highmark Western and Northeastern NY</h5>
+                            <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos perspiciatis magnam quos eum quas eius expedita delectus saepe omnis ea explicabo ipsam nobis enim accusamus voluptatum amet, iusto animi hic.</div>
+                        </div>
+                        <div class="row">
+                            <h6 class="mt-5">Other:</h6>
+                            <h5 class="card-subtitle">Six Flags Darien Lake</h5>
+                            <h6 class="card-subtitle text-muted">IT Technician, 2017-2019</h6>
+                            <h5 class="card-subtitle mt-3">Rite Aid Pharmacy</h5>
+                            <h6 class="card-subtitle text-muted">Shift Supervisor, 2013-2016</h6>
+                        </div>
                     </div>
                 </div>
                 <div id="projects-card" class="col card">
                     <div class="card-body">
-                        <h3 class="card-title">Projects</h5>
+                        <h3 class="card-title">Projects</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam culpa deleniti non corporis iure minus excepturi aliquid illum. Soluta earum nemo quod tempora omnis nam ex, nesciunt magni ea.</p>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </body>
+    <footer class="text-center text-lg-start">
+        <div class="container d-flex justify-content-center py-3">
+          <button type="button" class="btn btn-light btn-lg btn-floating mx-2 social-button border-0">
+            <i class="bi bi-linkedin"></i>
+          </button>
+          <button type="button" class="btn btn-light btn-lg btn-floating mx-2 social-button border-0">
+            <i class="bi bi-github"></i>
+          </button>
+          <button type="button" class="btn btn-light btn-lg btn-floating mx-2 social-button border-0">
+            <i class="bi bi-file-person-fill"></i>
+          </button>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center text-white p-1" style="background-color: rgba(0, 0, 0, 0.2);">
+          Made by Bailey Maynard, Updated 2022
+        </div>
+        <!-- Copyright -->
+      </footer>
+
 </html>
