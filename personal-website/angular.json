@@ -38,7 +38,7 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "baseHref": "/PersonalWebsite/"
+            "baseHref": "/"
           },
           "configurations": {
             "production": {
@@ -103,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

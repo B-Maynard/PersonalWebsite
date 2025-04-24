@@ -6,9 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "postbuild": "copy dist\\personal-website\\browser\\index.html dist\\personal-website\\browser\\404.html",
-    "deploy": "ng build --configuration production --base-href /PersonalWebsite && npm run postbuild && ngh --dir=dist/personal-website/browser"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
